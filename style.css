@@ -1,0 +1,21 @@
+body{
+	background-image: url();
+	font-family: verdana;
+
+}
+#texto{
+    height: 100px;
+    width: 200px;
+    margin-left: 400px;
+    margin-top: 150px;
+    border-radius: 10px;
+}
+#imprimir{
+	margin-left: 400px;
+    margin-top: 30px;
+}
+#boton{
+	display: block;
+	margin-left: 470px;
+    margin-top: 10px;
+}
