@@ -1,20 +1,30 @@
 body{
-	background-image: url();
+	background-image: url("images/photo-1.jpg");
 	font-family: verdana;
+	background-size: cover;
+	background-repeat: no-repeat;
 }
 #texto{
     height: 100px;
     width: 200px;
-    margin-left: 400px;
+    margin-left: 120px;
     margin-top: 150px;
     border-radius: 10px;
 }
 #imprimir{
-	margin-left: 400px;
+	margin-left: 120px;
     margin-top: 30px;
+    height: 120px;
+    width: 200px;
 }
 #boton{
 	display: block;
-	margin-left: 470px;
+	margin-left: 200px;
     margin-top: 10px;
+}
+.box{
+	background-color: #1C1C1C;
+	border-radius: 5px;
+	color: white;
+	text-align: center;
 }
