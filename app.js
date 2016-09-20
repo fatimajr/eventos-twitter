@@ -28,6 +28,15 @@ window.addEventListener("load", function(){
 		}else{
 			contador.innerHTML = caracteres - longitud;
 		}
+		if(longitud > caracteres){
+			boton.disabled = true;
+		}
+		if(longitud > 120){
+			contador.style.color = "purple";
+		}
+		if(longitud > 130){
+			contador.style.color = "orange";
+		}
 
 	})
 });
