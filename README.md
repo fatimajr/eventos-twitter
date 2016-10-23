@@ -116,4 +116,4 @@ function verHora(){
 		imprimir.insertBefore(horario, imprimir.childNodes[1]);
 	}
 ```
-![eventos twitter](http://3.1m.yt/lPZRtU.png "twitter")
+![eventos twitter](http://3.1m.yt/t0Ii8ms.png "twitter")

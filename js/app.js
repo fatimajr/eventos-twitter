@@ -3,10 +3,32 @@ window.addEventListener("load", function(){
 	var boton = document.getElementById("boton");
 	var textArea = document.getElementById("texto");
 	var contador = document.getElementById("contador");
+	var imprimir = document.getElementById("imprimir");
 	var caracteres = contador.innerHTML = 140; 
+	var tweet = document.getElementById("tweet");
+
+	tweet.addEventListener("click", function(e){
+		textArea.focus();
+	});
+	
+	textArea.addEventListener("keydown", function(e){
+		if (e.keyCode == 13){
+			e.preventDefault();
+			agregarMensaje(textArea.value);
+			contador.innerHTML = 140;
+			boton.disabled = true;
+			contador.classList.remove("purple");
+			contador.classList.remove("white");
+			resize();
+			verHora();
+			textArea.value = "";
+		}
+	});
+
 	textArea.addEventListener("keydown", autosize);
+
 	boton.addEventListener ("click", function(e){
-		e.preventDefault();//para que cambie al submit del boton y no recarge la pagina
+		e.preventDefault();
 		agregarMensaje(textArea.value);
 		textArea.value = "";
 		contador.innerHTML = 140;
@@ -22,10 +44,10 @@ window.addEventListener("load", function(){
 		cantidadCaracteres(longitud);
 		cambioColor(longitud);
 	});
+
 	function agregarMensaje(txt){
 		var parrafo = document.createElement("p");
 		parrafo.innerText = txt;
-		var imprimir = document.getElementById("imprimir");
 		imprimir.insertBefore(parrafo, imprimir.childNodes[0]).classList.add("box");
 	};
 	function autosize(){
@@ -70,9 +92,8 @@ window.addEventListener("load", function(){
 			minuto = "0" + minuto; 
 		}
 		var mostrarHora = hora + ":" + minuto;
-		var horario = document.createElement("div");
+		var horario = document.createElement("p");
 		horario.innerText = mostrarHora;
-		var imprimir = document.getElementById("imprimir");
 		imprimir.insertBefore(horario, imprimir.childNodes[1]);
 	}
 });
