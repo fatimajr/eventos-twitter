@@ -1,50 +1,51 @@
 body{
-	background-image: url("../images/photo-1.jpg");
-	font-family: verdana;
-	background-size: cover;
-	background-repeat: no-repeat;
+    padding-top: 80px;
+    padding-bottom: 20px;
 	box-sizing: border-box;
-}
-#icon{
-	background-image: url("../images/icon-1.png");
-	height: 100px;
-	width: 100px;
-	color: white;
+	background-image: url("../images/photo-1.jpg");
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
 	background-size: cover;
-	display: inline-block;
-	margin-left: 20px;
+ 	background-color: #464646;
 }
-#texto{
-    margin-top: 200px;
-    border-radius: 10px;
+
+textarea#texto{
     overflow: hidden;
+    margin-bottom: 2%; 
+    border-radius: 10px;
 }
-#imprimir{
-	margin-left: 120px;
-    margin-top: 30px;
-    height: 120px;
-    width: 200px;
+
+img.t-logo{
+	margin: 6px;
+	width: 50px;
 }
-#boton{
-	display: block;
-	margin-left: 370px;
-    margin-top: 10px;
-}
+
 .box{
-	background-color: #1C1C1C;
+	background-color: #101010;
 	border-radius: 5px;
 	color: white;
 	text-align: center;
+	width: 50%;
 }
-#contador{
-	font-style: bold;
+
+span#contador{
 	display: block;
-	margin-left: 400px;
-    margin-top: 10px;
+	float: right;
+	/*color: white;*/
+	font-weight: bold;
+	font-size: 2em;
 }
+
 .purple{
 	color: purple;
 }
+
 .white{
 	color: white;
+}
+
+.hour{
+	position: fixed;
+	display: block;
 }
